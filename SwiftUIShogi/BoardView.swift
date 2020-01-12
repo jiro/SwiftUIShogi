@@ -22,8 +22,8 @@ struct BoardSquaresView: View {
                             if let move = self.userData.validMoves.first(where: { $0.destination == .board(square) }) {
                                 try! self.userData.game.perform(move)
                                 self.userData.validMoves = []
-                            } else {
-                                self.userData.validMoves = self.userData.game.validMoves(from: .board(square))
+                            } else if let piece = self.userData.game.board[square] {
+                                self.userData.validMoves = self.userData.game.validMoves(from: .board(square), piece: piece)
                             }
                         }) { square in
                             SquareView(piece: self.userData.game.board[square])

@@ -3,7 +3,11 @@ import SwiftShogi
 
 struct ContentView: View {
     var body: some View {
-        BoardView()
+        HStack(spacing: 8) {
+            BoardSideView(color: .white)
+            BoardView()
+            BoardSideView(color: .black)
+        }
     }
 }
 

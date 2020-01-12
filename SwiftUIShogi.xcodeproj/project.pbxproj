@@ -20,6 +20,9 @@
 		4B8E99C223CB378D005BF776 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C123CB378D005BF776 /* SquareView.swift */; };
 		4B8E99C423CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C323CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift */; };
 		4B8E99C623CB3825005BF776 /* SquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C523CB3825005BF776 /* SquareButton.swift */; };
+		4B8E99C823CB3D51005BF776 /* BoardSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C723CB3D51005BF776 /* BoardSideView.swift */; };
+		4B8E99CA23CB3DC3005BF776 /* PieceStandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C923CB3DC3005BF776 /* PieceStandView.swift */; };
+		4B8E99CC23CB3E26005BF776 /* VerticalTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99CB23CB3E26005BF776 /* VerticalTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		4B8E99C123CB378D005BF776 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		4B8E99C323CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftShogi+SwiftUIShogi.swift"; sourceTree = "<group>"; };
 		4B8E99C523CB3825005BF776 /* SquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareButton.swift; sourceTree = "<group>"; };
+		4B8E99C723CB3D51005BF776 /* BoardSideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSideView.swift; sourceTree = "<group>"; };
+		4B8E99C923CB3DC3005BF776 /* PieceStandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceStandView.swift; sourceTree = "<group>"; };
+		4B8E99CB23CB3E26005BF776 /* VerticalTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,9 @@
 				4B8E99BF23CB370C005BF776 /* BoardView.swift */,
 				4B8E99C523CB3825005BF776 /* SquareButton.swift */,
 				4B8E99C123CB378D005BF776 /* SquareView.swift */,
+				4B8E99C723CB3D51005BF776 /* BoardSideView.swift */,
+				4B8E99C923CB3DC3005BF776 /* PieceStandView.swift */,
+				4B8E99CB23CB3E26005BF776 /* VerticalTextView.swift */,
 				4B8E99C323CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift */,
 				4B8E99A823CB3055005BF776 /* Assets.xcassets */,
 				4B8E99AD23CB3055005BF776 /* LaunchScreen.storyboard */,
@@ -172,8 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8E99CA23CB3DC3005BF776 /* PieceStandView.swift in Sources */,
 				4B8E99A323CB3053005BF776 /* AppDelegate.swift in Sources */,
 				4B8E99A523CB3053005BF776 /* SceneDelegate.swift in Sources */,
+				4B8E99CC23CB3E26005BF776 /* VerticalTextView.swift in Sources */,
+				4B8E99C823CB3D51005BF776 /* BoardSideView.swift in Sources */,
 				4B8E99BC23CB3607005BF776 /* UserData.swift in Sources */,
 				4B8E99C023CB370C005BF776 /* BoardView.swift in Sources */,
 				4B8E99C223CB378D005BF776 /* SquareView.swift in Sources */,

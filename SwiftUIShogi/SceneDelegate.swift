@@ -1,11 +1,14 @@
 import UIKit
 import SwiftUI
+import SwiftShogi
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        let contentView = ContentView()
+        let game = Game(sfen: .default)
+        let userData = UserData(game: game)
+        let contentView = ContentView().environmentObject(userData)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

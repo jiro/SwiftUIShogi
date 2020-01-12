@@ -14,6 +14,7 @@
 		4B8E99AC23CB3055005BF776 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E99AB23CB3055005BF776 /* Preview Assets.xcassets */; };
 		4B8E99AF23CB3055005BF776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E99AD23CB3055005BF776 /* LaunchScreen.storyboard */; };
 		4B8E99B823CB3492005BF776 /* SwiftShogi in Frameworks */ = {isa = PBXBuildFile; productRef = 4B8E99B723CB3492005BF776 /* SwiftShogi */; };
+		4B8E99BC23CB3607005BF776 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99BB23CB3607005BF776 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4B8E99AB23CB3055005BF776 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B8E99AE23CB3055005BF776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B8E99B023CB3055005BF776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B8E99BB23CB3607005BF776 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				4B8E99A223CB3053005BF776 /* AppDelegate.swift */,
 				4B8E99A423CB3053005BF776 /* SceneDelegate.swift */,
 				4B8E99A623CB3053005BF776 /* ContentView.swift */,
+				4B8E99BB23CB3607005BF776 /* UserData.swift */,
 				4B8E99A823CB3055005BF776 /* Assets.xcassets */,
 				4B8E99AD23CB3055005BF776 /* LaunchScreen.storyboard */,
 				4B8E99B023CB3055005BF776 /* Info.plist */,
@@ -156,6 +159,7 @@
 			files = (
 				4B8E99A323CB3053005BF776 /* AppDelegate.swift in Sources */,
 				4B8E99A523CB3053005BF776 /* SceneDelegate.swift in Sources */,
+				4B8E99BC23CB3607005BF776 /* UserData.swift in Sources */,
 				4B8E99A723CB3053005BF776 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

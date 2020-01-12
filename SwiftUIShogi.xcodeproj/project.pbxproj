@@ -13,7 +13,6 @@
 		4B8E99A923CB3055005BF776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E99A823CB3055005BF776 /* Assets.xcassets */; };
 		4B8E99AC23CB3055005BF776 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E99AB23CB3055005BF776 /* Preview Assets.xcassets */; };
 		4B8E99AF23CB3055005BF776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E99AD23CB3055005BF776 /* LaunchScreen.storyboard */; };
-		4B8E99B823CB3492005BF776 /* SwiftShogi in Frameworks */ = {isa = PBXBuildFile; productRef = 4B8E99B723CB3492005BF776 /* SwiftShogi */; };
 		4B8E99BC23CB3607005BF776 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99BB23CB3607005BF776 /* UserData.swift */; };
 		4B8E99BE23CB36D1005BF776 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99BD23CB36D1005BF776 /* Const.swift */; };
 		4B8E99C023CB370C005BF776 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99BF23CB370C005BF776 /* BoardView.swift */; };
@@ -23,6 +22,7 @@
 		4B8E99C823CB3D51005BF776 /* BoardSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C723CB3D51005BF776 /* BoardSideView.swift */; };
 		4B8E99CA23CB3DC3005BF776 /* PieceStandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C923CB3DC3005BF776 /* PieceStandView.swift */; };
 		4B8E99CC23CB3E26005BF776 /* VerticalTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99CB23CB3E26005BF776 /* VerticalTextView.swift */; };
+		4B8E99D423CB651F005BF776 /* SwiftShogi in Frameworks */ = {isa = PBXBuildFile; productRef = 4B8E99D323CB651F005BF776 /* SwiftShogi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B8E99B823CB3492005BF776 /* SwiftShogi in Frameworks */,
+				4B8E99D423CB651F005BF776 /* SwiftShogi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +137,7 @@
 			);
 			name = SwiftUIShogi;
 			packageProductDependencies = (
-				4B8E99B723CB3492005BF776 /* SwiftShogi */,
+				4B8E99D323CB651F005BF776 /* SwiftShogi */,
 			);
 			productName = SwiftUIShogi;
 			productReference = 4B8E999F23CB3053005BF776 /* SwiftUIShogi.app */;
@@ -168,7 +168,7 @@
 			);
 			mainGroup = 4B8E999623CB3053005BF776;
 			packageReferences = (
-				4B8E99B623CB3492005BF776 /* XCRemoteSwiftPackageReference "SwiftShogi" */,
+				4B8E99D223CB651E005BF776 /* XCRemoteSwiftPackageReference "SwiftShogi" */,
 			);
 			productRefGroup = 4B8E99A023CB3053005BF776 /* Products */;
 			projectDirPath = "";
@@ -402,9 +402,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4B8E99B623CB3492005BF776 /* XCRemoteSwiftPackageReference "SwiftShogi" */ = {
+		4B8E99D223CB651E005BF776 /* XCRemoteSwiftPackageReference "SwiftShogi" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:hedjirog/SwiftShogi.git";
+			repositoryURL = "https://github.com/hedjirog/SwiftShogi.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -413,9 +413,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4B8E99B723CB3492005BF776 /* SwiftShogi */ = {
+		4B8E99D323CB651F005BF776 /* SwiftShogi */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4B8E99B623CB3492005BF776 /* XCRemoteSwiftPackageReference "SwiftShogi" */;
+			package = 4B8E99D223CB651E005BF776 /* XCRemoteSwiftPackageReference "SwiftShogi" */;
 			productName = SwiftShogi;
 		};
 /* End XCSwiftPackageProductDependency section */

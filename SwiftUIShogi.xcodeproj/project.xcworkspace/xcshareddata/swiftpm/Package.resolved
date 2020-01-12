@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "SwiftShogi",
-        "repositoryURL": "git@github.com:hedjirog/SwiftShogi.git",
+        "repositoryURL": "https://github.com/hedjirog/SwiftShogi.git",
         "state": {
           "branch": "master",
           "revision": "af1d7d69737991ff2fbbfc7abfcaf9f1a735a600",

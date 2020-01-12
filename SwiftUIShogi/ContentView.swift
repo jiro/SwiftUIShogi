@@ -1,13 +1,14 @@
 import SwiftUI
+import SwiftShogi
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        BoardView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(UserData(game: Game(sfen: .default)))
     }
 }

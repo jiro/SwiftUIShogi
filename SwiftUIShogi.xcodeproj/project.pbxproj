@@ -15,6 +15,11 @@
 		4B8E99AF23CB3055005BF776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E99AD23CB3055005BF776 /* LaunchScreen.storyboard */; };
 		4B8E99B823CB3492005BF776 /* SwiftShogi in Frameworks */ = {isa = PBXBuildFile; productRef = 4B8E99B723CB3492005BF776 /* SwiftShogi */; };
 		4B8E99BC23CB3607005BF776 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99BB23CB3607005BF776 /* UserData.swift */; };
+		4B8E99BE23CB36D1005BF776 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99BD23CB36D1005BF776 /* Const.swift */; };
+		4B8E99C023CB370C005BF776 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99BF23CB370C005BF776 /* BoardView.swift */; };
+		4B8E99C223CB378D005BF776 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C123CB378D005BF776 /* SquareView.swift */; };
+		4B8E99C423CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C323CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift */; };
+		4B8E99C623CB3825005BF776 /* SquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C523CB3825005BF776 /* SquareButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		4B8E99AE23CB3055005BF776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B8E99B023CB3055005BF776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B8E99BB23CB3607005BF776 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		4B8E99BD23CB36D1005BF776 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		4B8E99BF23CB370C005BF776 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		4B8E99C123CB378D005BF776 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
+		4B8E99C323CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftShogi+SwiftUIShogi.swift"; sourceTree = "<group>"; };
+		4B8E99C523CB3825005BF776 /* SquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +72,13 @@
 			children = (
 				4B8E99A223CB3053005BF776 /* AppDelegate.swift */,
 				4B8E99A423CB3053005BF776 /* SceneDelegate.swift */,
-				4B8E99A623CB3053005BF776 /* ContentView.swift */,
 				4B8E99BB23CB3607005BF776 /* UserData.swift */,
+				4B8E99BD23CB36D1005BF776 /* Const.swift */,
+				4B8E99A623CB3053005BF776 /* ContentView.swift */,
+				4B8E99BF23CB370C005BF776 /* BoardView.swift */,
+				4B8E99C523CB3825005BF776 /* SquareButton.swift */,
+				4B8E99C123CB378D005BF776 /* SquareView.swift */,
+				4B8E99C323CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift */,
 				4B8E99A823CB3055005BF776 /* Assets.xcassets */,
 				4B8E99AD23CB3055005BF776 /* LaunchScreen.storyboard */,
 				4B8E99B023CB3055005BF776 /* Info.plist */,
@@ -160,7 +175,12 @@
 				4B8E99A323CB3053005BF776 /* AppDelegate.swift in Sources */,
 				4B8E99A523CB3053005BF776 /* SceneDelegate.swift in Sources */,
 				4B8E99BC23CB3607005BF776 /* UserData.swift in Sources */,
+				4B8E99C023CB370C005BF776 /* BoardView.swift in Sources */,
+				4B8E99C223CB378D005BF776 /* SquareView.swift in Sources */,
+				4B8E99C623CB3825005BF776 /* SquareButton.swift in Sources */,
 				4B8E99A723CB3053005BF776 /* ContentView.swift in Sources */,
+				4B8E99BE23CB36D1005BF776 /* Const.swift in Sources */,
+				4B8E99C423CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

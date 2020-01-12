@@ -18,13 +18,30 @@ struct BoardSquaresView: View {
             ForEach(File.allCases, id: \.self) { file in
                 VStack(spacing: 0) {
                     ForEach(Rank.allCases, id: \.self) { rank in
-                        SquareButton(file: file, rank: rank, action: { square in }) { square in
+                        SquareButton(file: file, rank: rank, action: { square in
+                            if let move = self.userData.validMoves.first(where: { $0.destination == .board(square) }) {
+                                try! self.userData.game.perform(move)
+                                self.userData.validMoves = []
+                            } else {
+                                self.userData.validMoves = self.userData.game.validMoves(from: .board(square))
+                            }
+                        }) { square in
                             SquareView(piece: self.userData.game.board[square])
+                                .scaleEffect(self.scaleEffect(at: square))
+                                .background(self.backgroundColor(at: square))
                         }
                     }
                 }
             }
         }
+    }
+
+    private func scaleEffect(at square: Square) -> CGFloat {
+        userData.validMoves.contains(where: { $0.source == .board(square) }) ? 1.2 : 1
+    }
+
+    private func backgroundColor(at square: Square) -> SwiftUI.Color {
+        userData.validMoves.contains(where: { $0.destination == .board(square) }) ? Color.black.opacity(0.2) : Color.white
     }
 }
 

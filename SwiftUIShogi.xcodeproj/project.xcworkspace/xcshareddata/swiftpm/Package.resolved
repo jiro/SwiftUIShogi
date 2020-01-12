@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftShogi",
+        "repositoryURL": "git@github.com:hedjirog/SwiftShogi.git",
+        "state": {
+          "branch": "master",
+          "revision": "7747f452ddf6ccad2f235f0602ea6ff5b65797f7",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

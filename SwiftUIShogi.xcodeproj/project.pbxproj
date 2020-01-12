@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		4B8E99A923CB3055005BF776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E99A823CB3055005BF776 /* Assets.xcassets */; };
 		4B8E99AC23CB3055005BF776 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E99AB23CB3055005BF776 /* Preview Assets.xcassets */; };
 		4B8E99AF23CB3055005BF776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E99AD23CB3055005BF776 /* LaunchScreen.storyboard */; };
+		4B8E99B823CB3492005BF776 /* SwiftShogi in Frameworks */ = {isa = PBXBuildFile; productRef = 4B8E99B723CB3492005BF776 /* SwiftShogi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8E99B823CB3492005BF776 /* SwiftShogi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = SwiftUIShogi;
+			packageProductDependencies = (
+				4B8E99B723CB3492005BF776 /* SwiftShogi */,
+			);
 			productName = SwiftUIShogi;
 			productReference = 4B8E999F23CB3053005BF776 /* SwiftUIShogi.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 4B8E999623CB3053005BF776;
+			packageReferences = (
+				4B8E99B623CB3492005BF776 /* XCRemoteSwiftPackageReference "SwiftShogi" */,
+			);
 			productRefGroup = 4B8E99A023CB3053005BF776 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B8E99B623CB3492005BF776 /* XCRemoteSwiftPackageReference "SwiftShogi" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:hedjirog/SwiftShogi.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B8E99B723CB3492005BF776 /* SwiftShogi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B8E99B623CB3492005BF776 /* XCRemoteSwiftPackageReference "SwiftShogi" */;
+			productName = SwiftShogi;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B8E999723CB3053005BF776 /* Project object */;
 }

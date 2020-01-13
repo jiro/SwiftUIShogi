@@ -21,12 +21,13 @@ struct BoardSquaresView: View {
                         SquareButton(file: file, rank: rank, action: { square in
                             if let move = self.userData.validMoves.first(where: { $0.destination == .board(square) }) {
                                 try! self.userData.game.perform(move)
+                                self.userData.previousMove = move
                                 self.userData.validMoves = []
                             } else if let piece = self.userData.game.board[square] {
                                 self.userData.validMoves = self.userData.game.validMoves(from: .board(square), piece: piece)
                             }
                         }) { square in
-                            SquareView(piece: self.userData.game.board[square])
+                            SquareView(square: square, piece: self.userData.game.board[square])
                                 .scaleEffect(self.scaleEffect(at: square))
                                 .background(self.backgroundColor(at: square))
                         }

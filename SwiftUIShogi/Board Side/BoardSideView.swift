@@ -21,7 +21,7 @@ struct BoardSideView: View {
         }
         .frame(height: Const.boardHeight)
         .rotationEffect(color.angle)
-        .font(.custom("Hiragino Mincho Pro W3", size: Const.boardSideFontSize))
+        .font(.custom(Const.fontName, size: Const.boardSideFontSize))
         .foregroundColor(.black)
     }
 }

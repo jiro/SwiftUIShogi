@@ -19,13 +19,7 @@ struct BoardSquaresView: View {
                 VStack(spacing: 0) {
                     ForEach(Rank.allCases, id: \.self) { rank in
                         SquareButton(file: file, rank: rank, action: { square in
-                            if let move = self.userData.validMoves.first(where: { $0.destination == .board(square) }) {
-                                try! self.userData.game.perform(move)
-                                self.userData.previousMove = move
-                                self.userData.validMoves = []
-                            } else if let piece = self.userData.game.board[square] {
-                                self.userData.validMoves = self.userData.game.validMoves(from: .board(square), piece: piece)
-                            }
+                            self.updateUserData(with: square)
                         }) { square in
                             SquareView(square: square, piece: self.userData.game.board[square])
                                 .scaleEffect(self.scaleEffect(at: square))
@@ -35,6 +29,27 @@ struct BoardSquaresView: View {
                 }
             }
         }
+    }
+
+    private func updateUserData(with square: Square) {
+        switch (validMove(to: square), piece(at: square)) {
+        case let (move?, _):
+            try! userData.game.perform(move)
+            userData.previousMove = move
+            userData.validMoves = []
+        case let (_, piece?):
+            userData.validMoves = userData.game.validMoves(from: .board(square), piece: piece)
+        default:
+            break
+        }
+    }
+
+    private func validMove(to square: Square) -> Move? {
+        userData.validMoves.first { $0.destination == .board(square) }
+    }
+
+    private func piece(at square: Square) -> Piece? {
+        userData.game.board[square]
     }
 
     private func scaleEffect(at square: Square) -> CGFloat {

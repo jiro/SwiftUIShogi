@@ -5,9 +5,9 @@
         "package": "SwiftShogi",
         "repositoryURL": "https://github.com/hedjirog/SwiftShogi.git",
         "state": {
-          "branch": "master",
-          "revision": "af1d7d69737991ff2fbbfc7abfcaf9f1a735a600",
-          "version": null
+          "branch": null,
+          "revision": "a52c885a8d194034176d459cb6a2ed8394fde130",
+          "version": "0.1.0"
         }
       }
     ]

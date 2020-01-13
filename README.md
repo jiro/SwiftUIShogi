@@ -14,11 +14,11 @@
     </a>
 </p>
 
-An example shogi app using SwiftUI. This app is developed using [SwiftShogi](https://github.com/hedjirog/SwiftShogi).
-
 <p align="center">
     <img src="Demo.gif" width="400" max-width="90%" alt=“Demo” />
 </p>
+
+An example shogi app using SwiftUI. This app is developed using [SwiftShogi](https://github.com/hedjirog/SwiftShogi).
 
 ## Requirements
 

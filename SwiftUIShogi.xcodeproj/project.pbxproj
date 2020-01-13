@@ -19,7 +19,6 @@
 		4B8E99C023CB370C005BF776 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99BF23CB370C005BF776 /* BoardView.swift */; };
 		4B8E99C223CB378D005BF776 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C123CB378D005BF776 /* SquareView.swift */; };
 		4B8E99C423CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C323CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift */; };
-		4B8E99C623CB3825005BF776 /* SquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C523CB3825005BF776 /* SquareButton.swift */; };
 		4B8E99C823CB3D51005BF776 /* BoardSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C723CB3D51005BF776 /* BoardSideView.swift */; };
 		4B8E99CA23CB3DC3005BF776 /* PieceStandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99C923CB3DC3005BF776 /* PieceStandView.swift */; };
 		4B8E99CC23CB3E26005BF776 /* VerticalTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99CB23CB3E26005BF776 /* VerticalTextView.swift */; };
@@ -41,7 +40,6 @@
 		4B8E99BF23CB370C005BF776 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		4B8E99C123CB378D005BF776 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		4B8E99C323CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftShogi+SwiftUIShogi.swift"; sourceTree = "<group>"; };
-		4B8E99C523CB3825005BF776 /* SquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareButton.swift; sourceTree = "<group>"; };
 		4B8E99C723CB3D51005BF776 /* BoardSideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSideView.swift; sourceTree = "<group>"; };
 		4B8E99C923CB3DC3005BF776 /* PieceStandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceStandView.swift; sourceTree = "<group>"; };
 		4B8E99CB23CB3E26005BF776 /* VerticalTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTextView.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 			children = (
 				4B8E99BF23CB370C005BF776 /* BoardView.swift */,
 				4B2A62FB23CCC0E700616510 /* SquaresView.swift */,
-				4B8E99C523CB3825005BF776 /* SquareButton.swift */,
 				4B8E99C123CB378D005BF776 /* SquareView.swift */,
 			);
 			path = Board;
@@ -208,7 +205,6 @@
 				4B8E99BC23CB3607005BF776 /* UserData.swift in Sources */,
 				4B8E99C023CB370C005BF776 /* BoardView.swift in Sources */,
 				4B8E99C223CB378D005BF776 /* SquareView.swift in Sources */,
-				4B8E99C623CB3825005BF776 /* SquareButton.swift in Sources */,
 				4B2A62FC23CCC0E700616510 /* SquaresView.swift in Sources */,
 				4B8E99A723CB3053005BF776 /* ContentView.swift in Sources */,
 				4B8E99BE23CB36D1005BF776 /* Const.swift in Sources */,

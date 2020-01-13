@@ -15,9 +15,9 @@ struct BoardSquaresView: View {
 
     var body: some View {
         SquaresView() { square in
-            SquareButton(square: square, action: { square in
+            Button(action: {
                 self.updateUserData(with: square)
-            }) { square in
+            }) {
                 SquareView(square: square, piece: self.userData.game.board[square])
                     .scaleEffect(self.scaleEffect(at: square))
                     .background(self.backgroundColor(at: square))

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B2A62FC23CCC0E700616510 /* SquaresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A62FB23CCC0E700616510 /* SquaresView.swift */; };
 		4B8E99A323CB3053005BF776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99A223CB3053005BF776 /* AppDelegate.swift */; };
 		4B8E99A523CB3053005BF776 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99A423CB3053005BF776 /* SceneDelegate.swift */; };
 		4B8E99A723CB3053005BF776 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E99A623CB3053005BF776 /* ContentView.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B2A62FB23CCC0E700616510 /* SquaresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquaresView.swift; sourceTree = "<group>"; };
 		4B8E999F23CB3053005BF776 /* SwiftUIShogi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIShogi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8E99A223CB3053005BF776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B8E99A423CB3053005BF776 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				4B8E99BF23CB370C005BF776 /* BoardView.swift */,
+				4B2A62FB23CCC0E700616510 /* SquaresView.swift */,
 				4B8E99C523CB3825005BF776 /* SquareButton.swift */,
 				4B8E99C123CB378D005BF776 /* SquareView.swift */,
 			);
@@ -206,6 +209,7 @@
 				4B8E99C023CB370C005BF776 /* BoardView.swift in Sources */,
 				4B8E99C223CB378D005BF776 /* SquareView.swift in Sources */,
 				4B8E99C623CB3825005BF776 /* SquareButton.swift in Sources */,
+				4B2A62FC23CCC0E700616510 /* SquaresView.swift in Sources */,
 				4B8E99A723CB3053005BF776 /* ContentView.swift in Sources */,
 				4B8E99BE23CB36D1005BF776 /* Const.swift in Sources */,
 				4B8E99C423CB37DA005BF776 /* SwiftShogi+SwiftUIShogi.swift in Sources */,

@@ -14,19 +14,13 @@ struct BoardSquaresView: View {
     @EnvironmentObject var userData: UserData
 
     var body: some View {
-        HStack(spacing: 0) {
-            ForEach(File.allCases, id: \.self) { file in
-                VStack(spacing: 0) {
-                    ForEach(Rank.allCases, id: \.self) { rank in
-                        SquareButton(file: file, rank: rank, action: { square in
-                            self.updateUserData(with: square)
-                        }) { square in
-                            SquareView(square: square, piece: self.userData.game.board[square])
-                                .scaleEffect(self.scaleEffect(at: square))
-                                .background(self.backgroundColor(at: square))
-                        }
-                    }
-                }
+        SquaresView() { square in
+            SquareButton(square: square, action: { square in
+                self.updateUserData(with: square)
+            }) { square in
+                SquareView(square: square, piece: self.userData.game.board[square])
+                    .scaleEffect(self.scaleEffect(at: square))
+                    .background(self.backgroundColor(at: square))
             }
         }
     }

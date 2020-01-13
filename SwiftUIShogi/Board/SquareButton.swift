@@ -6,11 +6,12 @@ struct SquareButton<Label> : View where Label : View {
     private let action: (Square) -> Void
     private let label: Label
 
-    init(file: File, rank: Rank, action: @escaping (Square) -> Void, @ViewBuilder label: (Square) -> Label) {
-        self.square = Square(file: file, rank: rank)
+    init(square: Square, action: @escaping (Square) -> Void, @ViewBuilder label: (Square) -> Label) {
+        self.square = square
         self.action = action
         self.label = label(square)
     }
+    
     var body: some View {
         Button(action: { self.action(self.square) }) { label }
     }

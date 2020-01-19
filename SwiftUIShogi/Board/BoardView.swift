@@ -16,34 +16,13 @@ struct BoardSquaresView: View {
     var body: some View {
         SquaresView() { square in
             Button(action: {
-                self.updateUserData(with: square)
+                self.userData.updateForBoard(with: square)
             }) {
                 SquareView(square: square, piece: self.userData.game.board[square])
                     .scaleEffect(self.scaleEffect(at: square))
                     .background(self.backgroundColor(at: square))
             }
         }
-    }
-
-    private func updateUserData(with square: Square) {
-        switch (validMove(to: square), piece(at: square)) {
-        case let (move?, _):
-            try! userData.game.perform(move)
-            userData.previousMove = move
-            userData.validMoves = []
-        case let (_, piece?):
-            userData.validMoves = userData.game.validMoves(from: .board(square), piece: piece)
-        default:
-            break
-        }
-    }
-
-    private func validMove(to square: Square) -> Move? {
-        userData.validMoves.first { $0.destination == .board(square) }
-    }
-
-    private func piece(at square: Square) -> Piece? {
-        userData.game.board[square]
     }
 
     private func scaleEffect(at square: Square) -> CGFloat {

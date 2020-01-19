@@ -18,14 +18,14 @@ struct PieceStandView: View {
 
             ForEach(capturedPiecesWithoutPawns, id: \.self) { piece in
                 Button(action: {
-                    self.userData.validMoves = self.userData.game.validMoves(from: .capturedPiece, piece: piece)
+                    self.userData.updateForCapturedPiece(with: piece)
                 }) {
                     Text(piece.string)
                 }
             }
             if !capturedPawnPieces.isEmpty {
                 Button(action: {
-                    self.userData.validMoves = self.userData.game.validMoves(from: .capturedPiece, piece: self.capturedPawnPieces.first!)
+                    self.userData.updateForCapturedPiece(with: self.capturedPawnPieces.first!)
                 }) {
                     Text(capturedPawnPieces.first!.string)
                 }
